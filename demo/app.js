@@ -6,13 +6,18 @@
 				align : function(e, editor, alignment){
 					console.log(alignment + ' aligned');
 				}
-			}
+			},
+			imageUploadURL: '/upload/image_editor.s',
+			imageUploadParams: {
+
+			},
+			pastedImagesUploadURL: '/upload/image_paste.s'
 		});
 
 	// create the controller and inject Angular's $scope
 	myApp.controller('mainController', function($scope) {
 		$scope.options = {
-			placeholder : 'My Placeholder'
+			placeholder : 'placeholder...'
 		};
 
 		$scope.froalaAction = function(action){
